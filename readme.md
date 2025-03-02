@@ -1,3 +1,5 @@
+⚠️ **This project follows an Academic Integrity Notice. See the [NOTICE](NOTICE) file for details.** ⚠️
+
 # ICS 635: Machine Learning
 
 > Derek Garcia
@@ -13,12 +15,13 @@ docker build -t jupyter-ics635 .
 2. Launch container
 
 ```bash
-docker run --rm -it -p 8888:8888 jupyter-ics635
+docker run --rm -it -v "$(pwd)/assignments:/home/jupyter/assignments" -p 8888:8888 jupyter-ics635
 ```
 
 Assignments can now be found below:
 
-- [Assignment 1](http://localhost:8888/notebooks/assignment1.ipynb)
+- [Assignment 1](http://localhost:8888/notebooks/assignment1/assignment1.ipynb)
+  - [Offline Version](assignments/assignment1/assignment1.ipynb)
 
 ## Local Deployment
 
