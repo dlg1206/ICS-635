@@ -22,6 +22,9 @@ Assignments can now be found below:
 
 - [Assignment 1](http://localhost:8888/notebooks/assignment1/assignment1.ipynb)
   - [Offline Version](assignments/assignment1/assignment1.ipynb)
+- [Assignment 3](http://localhost:8888/notebooks/assignment3/assignment3.ipynb)
+  - [Offline Version](assignments/assignment3/assignment3.ipynb)
+
 
 ## Local Deployment
 
