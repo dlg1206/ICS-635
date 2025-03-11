@@ -8,6 +8,7 @@ COPY requirements.txt requirements.txt
 
 USER jupyter
 RUN python3 -m pip install --upgrade pip
-RUN pip install notebook && pip install -r requirements.txt
+RUN pip install notebook==7.3.2
+RUN pip install -r requirements.txt
 
-ENTRYPOINT ["jupyter", "notebook", "assignments", "--ip=0.0.0.0", "--NotebookApp.token=''"]
+ENTRYPOINT ["jupyter", "notebook", "--notebook-dir=assignments", "--ip=0.0.0.0", "--ServerApp.token=''", "--ServerApp.password=''", "--ServerApp.password_required=False"]
